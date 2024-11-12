@@ -16,4 +16,7 @@ public interface UserRepository {
 
     void insertUserRole(Long userId, Role role);
 
+    boolean isTaskOwner(Long userId, Long taskId);
+
+    void delete(Long id);
 }
